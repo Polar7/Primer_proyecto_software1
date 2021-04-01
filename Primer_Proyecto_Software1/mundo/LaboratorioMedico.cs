@@ -15,18 +15,18 @@ namespace LaboratorioMedico.mundo
         /*
          *  Contenedora con las areas del laboratorio
          */
-        private AreaLaboratorio[] areas;
+        private AreaDelLaboratorio[] areas;
 
        
         public LaboratorioMedico ()
         {
-            areas = new AreaLaboratorio[CANTIDAD_AREAS];
+            areas = new AreaDelLaboratorio[CANTIDAD_AREAS];
 
-            areas[0] = new AreaLaboratorio("Sala de espera", 15);
-            areas[1] = new AreaLaboratorio("Optometria", 2);
-            areas[2] = new AreaLaboratorio("Otorrinolaringología", 4);
-            areas[3] = new AreaLaboratorio("Psicologia", 6);
-            areas[3] = new AreaLaboratorio("General", 1);
+            areas[0] = new AreaDelLaboratorio("Sala de espera", 15);
+            areas[1] = new AreaDelLaboratorio("Optometria", 2);
+            areas[2] = new AreaDelLaboratorio("Otorrinolaringología", 4);
+            areas[3] = new AreaDelLaboratorio("Psicologia", 6);
+            areas[3] = new AreaDelLaboratorio("General", 1);
         }
 
 

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LaboratorioMedico.mundo
 {
-    class AreaLaboratorio
+    class AreaDelLaboratorio
     {
 
         /*
@@ -35,7 +35,7 @@ namespace LaboratorioMedico.mundo
         /*
          *  Construye una area del laboratorio
          */
-        public AreaLaboratorio(string pNombreArea, int pCapacidad)
+        public AreaDelLaboratorio(string pNombreArea, int pCapacidad)
         {
             nombreArea = pNombreArea;
             cantidadPacientes = 0;
