@@ -6,6 +6,7 @@ namespace LaboratorioMedico.mundo
 {
     class AreaDelLaboratorio
     {
+        //Hola amiwis ya pude
 
         /*
          *  Nombre del area
