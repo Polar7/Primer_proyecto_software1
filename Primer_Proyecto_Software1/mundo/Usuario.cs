@@ -14,22 +14,22 @@ namespace LaboratorioMedico.mundo
         // -----------------------------------------------------------------
 
         /**
-        * Cedula del paciente
+        * Cedula del usuario
         */
         private int cedula;
 
         /**
-         * Nombre del paciente
+         * Nombre del usuario
          */
         private String nombreCompleto;
 
         /**
-         * Area en la que se ubica el paciente
+         * Area en la que se ubica el usuario
          */
         private String areaUbicado;
 
         /**
-         * Sexo del paciente
+         * Sexo del usuario
          */
         private char sexo;
     
@@ -39,13 +39,13 @@ namespace LaboratorioMedico.mundo
         private int examenesAprobados;
 
         /*
-        * Indica si el paciente es apto para recibir su licencia
+        * Indica si el usuario es apto para recibir su licencia
         */
         private bool licenciaAprobada;
 
 
         /*
-         *  El siguiente paciente en el area
+         *  El siguiente usuario en el area
          */
         private Usuario siguiente;
 
@@ -54,7 +54,7 @@ namespace LaboratorioMedico.mundo
         //-----------------------------------------------------------------
 
         /*
-         *  Construye un paciente
+         *  Construye un usuario
          */
         public Usuario(int pCedula, string pNombreCompleto, string pAreaUbicado, char pSexo)
         {
@@ -79,37 +79,37 @@ namespace LaboratorioMedico.mundo
         //-----------------------------------------------------------------
 
         /*
-         * Retorna o cambia la cedula del paciente
+         * Retorna o cambia la cedula del usuario
          */
         public int Cedula { get => cedula; set => cedula = value; }
-        
+
         /*
-         * Retorna o cambia el nombre del paciente
+         * Retorna o cambia el nombre del usuario
          */
         public string NombreCompleto { get => nombreCompleto; set => nombreCompleto = value; }
 
         /*
-         * Retorna o cambia el area donde está ubicado del paciente
+         * Retorna o cambia el area donde está ubicado del usuario
          */
         public string AreaUbicado { get => areaUbicado; set => areaUbicado = value; }
 
         /*
-         * Retorna o cambia sexo del paciente
+         * Retorna o cambia sexo del usuario
          */
         public char Sexo { get => sexo; set => sexo = value; }
 
         /*
-         * Retorna o cambia el estado de la licencia del paciente
+         * Retorna o cambia el estado de la licencia del usuario
          */
         public bool LicenciaAprobada { get => licenciaAprobada; set => licenciaAprobada = value; }
 
         /*
-         * Retorna o cambia la cantidad de examanes del paciente
+         * Retorna o cambia la cantidad de examanes del usuario
          */
         public int ExamenesAprobados { get => examenesAprobados; set => examenesAprobados = value; }
-        
+
         /*
-         * Retorna o cambia el siguiente paciente en el area
+         * Retorna o cambia el siguiente usuario en el area
          */
         public Usuario Siguiente { get => siguiente; set => siguiente = value; }
 
@@ -120,7 +120,7 @@ namespace LaboratorioMedico.mundo
             siguiente = nuevoPaciente;
         }
         /*
-         *  Retorna una cadena con la información del paciente
+         *  Retorna una cadena con la información del usuario
          */
         public String toString()
         {
