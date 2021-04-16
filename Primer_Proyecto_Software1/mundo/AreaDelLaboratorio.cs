@@ -9,6 +9,7 @@ namespace LaboratorioMedico.mundo
         //Hola amiwis ya pude
 
         //Wenas wenas
+        //Otro wenas wenas
 
         /*
          *  Nombre del area
