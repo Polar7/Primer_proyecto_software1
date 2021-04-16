@@ -29,7 +29,7 @@ namespace LaboratorioMedico.mundo
         /*
          *  Primer paciente en el area
          */
-        private Paciente primero;
+        private Usuario primero;
 
 
         //-----------------------------------------------------------------
@@ -69,7 +69,7 @@ namespace LaboratorioMedico.mundo
         /*
          *  Agrega un paciente al final del area
          */
-        public void ingresarPaciente (Paciente pacienteNuevo)
+        public void ingresarPaciente (Usuario pacienteNuevo)
         {
             if ( primero == null )
             {
@@ -78,7 +78,7 @@ namespace LaboratorioMedico.mundo
             else
             {
                 // Busca el último paciente de la lista
-                Paciente p = localizarUltimo();
+                Usuario p = localizarUltimo();
 
                 // Adiciona el paciente después del último paciente de la lista
                 p.insertarDespues(pacienteNuevo);
@@ -87,9 +87,9 @@ namespace LaboratorioMedico.mundo
 
         }
 
-        public Paciente localizarUltimo()
+        public Usuario localizarUltimo()
         {
-            Paciente actual = primero;
+            Usuario actual = primero;
 
             if (actual != null)
             {

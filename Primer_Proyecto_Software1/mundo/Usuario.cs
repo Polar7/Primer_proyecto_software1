@@ -7,7 +7,7 @@ namespace LaboratorioMedico.mundo
     /*
      * Clase que moldea un paciente en un laboratorio medico para recibir licencia de conduccion
      */
-    class Paciente
+    class Usuario
     {
         // -----------------------------------------------------------------
         // Atributos
@@ -47,7 +47,7 @@ namespace LaboratorioMedico.mundo
         /*
          *  El siguiente paciente en el area
          */
-        private Paciente siguiente;
+        private Usuario siguiente;
 
         //-----------------------------------------------------------------
         // Constructores
@@ -56,7 +56,7 @@ namespace LaboratorioMedico.mundo
         /*
          *  Construye un paciente
          */
-        public Paciente(int pCedula, string pNombreCompleto, string pAreaUbicado, char pSexo)
+        public Usuario(int pCedula, string pNombreCompleto, string pAreaUbicado, char pSexo)
         {
             cedula = pCedula;
 
@@ -111,10 +111,10 @@ namespace LaboratorioMedico.mundo
         /*
          * Retorna o cambia el siguiente paciente en el area
          */
-        public Paciente Siguiente { get => siguiente; set => siguiente = value; }
+        public Usuario Siguiente { get => siguiente; set => siguiente = value; }
 
 
-        public void insertarDespues(Paciente nuevoPaciente)
+        public void insertarDespues(Usuario nuevoPaciente)
         {
             nuevoPaciente.Siguiente = siguiente;
             siguiente = nuevoPaciente;
