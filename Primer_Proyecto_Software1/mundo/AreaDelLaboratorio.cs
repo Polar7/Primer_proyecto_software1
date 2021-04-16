@@ -8,6 +8,8 @@ namespace LaboratorioMedico.mundo
     {
         //Hola amiwis ya pude
 
+        //Wenas wenas
+
         /*
          *  Nombre del area
          */
